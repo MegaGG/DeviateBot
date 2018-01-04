@@ -68,6 +68,7 @@ bot.login(process.env.BOT_TOKEN).catch(console.error)
 
 bot.on("ready", async () => {
     console.log(`\n${bot.user.tag} has succesfully logged in...`);
+    bot.user.setGame("@DeviateESC | New prefix is '?'")
     const invLink = await bot.generateInvite(8);
     console.log(invLink);
 });
