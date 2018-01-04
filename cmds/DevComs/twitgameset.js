@@ -1,3 +1,4 @@
+const bot = require('discord.js')
 module.exports.run = async (bot, message, args,) => {
     if (message.author.id === '214662509175504896') {
         bot.user.setgame("@DeviateESC | New prefix is '?'")
