@@ -64,7 +64,7 @@ fs.readdir('./cmds/DevComs/', (err, files) => {
 });
 
 
-bot.login("Mzg2Mjc4OTgzNzMxMjQ5MTUz.DS85ug.kiRQTW_VLFDrnjlXl6mdFrs5aOI").catch(console.error)
+bot.login(process.env.BOT_TOKEN).catch(console.error)
 
 bot.on("ready", async () => {
     console.log(`\n${bot.user.tag} has succesfully logged in...`);
