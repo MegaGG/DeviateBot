@@ -1,5 +1,5 @@
 module.exports.run = async (bot, message, args) => {
-    if (message.member.author.id === '212073112378933249' || '214662509175504896') {
+    if (message.author.id === '212073112378933249' || '214662509175504896') {
         let member = message.mentions.members.first();
         if (!member) return message.reply("Please enter a valid member of the server.");
 
