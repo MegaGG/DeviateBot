@@ -68,7 +68,7 @@ bot.login(process.env.BOT_TOKEN).catch(console.error)
 
 bot.on("ready", async () => {
     console.log(`\n${bot.user.tag} has succesfully logged in...`);
-    bot.user.setGame("@DeviateESC | Created by @MegaGG5621")
+    bot.user.setGame("@DeviateESC | Created by @MegaGG#1337")
     const invLink = await bot.generateInvite(8);
     console.log(invLink);
 });
